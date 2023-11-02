@@ -11,6 +11,7 @@
     />
 
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/queries.css" />
     <title>Omnifood</title>
   </head>
   <body>
@@ -23,6 +24,11 @@
             alt="Omnifood logo"
           />
         </a>
+        <button type="button" class="button-mobile-nav">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+
         <nav class="main-nav">
           <ul class="nav-list">
             <li class="nav-item">
@@ -38,7 +44,7 @@
               <a href="#pricing" class="nav-link">Pricing</a>
             </li>
             <li class="nav-item">
-              <a href="#cta" class="nav-link nav-link--cta">Start now!</a>
+              <a href="#cta" class="nav-link-cta btn--full">Start now!</a>
             </li>
           </ul>
         </nav>
@@ -56,7 +62,7 @@
               eat healthy again. Tailored to your personal tastes and
               nutritional needs.
             </p>
-            <div class="btn-container grid grid--two-columns">
+            <div class="btn-container">
               <a href="#" class="btn btn--full">Start eating well</a>
               <a href="#" class="btn btn--outline">Learn more &darr;</a>
             </div>
@@ -529,7 +535,7 @@
                   class="plan-icon plan-icon--green"
                   name="checkmark-outline"
                 ></ion-icon>
-                <p class="plan-text">Order from 11am to 9pm</p>
+                <p class="plan-text">Order 11am-9pm</p>
               </li>
               <li class="plan-item">
                 <ion-icon
@@ -580,9 +586,7 @@
                   class="plan-icon plan-icon--green"
                   name="checkmark-outline"
                 ></ion-icon>
-                <p class="plan-text">
-                  Get access to <strong>latest recipes</strong>
-                </p>
+                <p class="plan-text">Get access to latest recipes</p>
               </li>
             </ul>
             <a href="#" class="btn price-btn btn--full">Get Started</a>
@@ -622,16 +626,6 @@
               </div>
             </li>
             <li class="features-item">
-              <ion-icon class="features-icon" name="leaf-outline"></ion-icon>
-              <div class="features-text-content">
-                <h3 class="features-heading">No waste</h3>
-                <p class="features-text">
-                  All our partners only use reusable containers to package all
-                  your meals.
-                </p>
-              </div>
-            </li>
-            <li class="features-item">
               <ion-icon
                 class="features-icon"
                 name="pause-circle-outline"
@@ -641,6 +635,16 @@
                 <p class="features-text">
                   Going on vacation? Just pause your subscription, and we refund
                   unused days.
+                </p>
+              </div>
+            </li>
+            <li class="features-item">
+              <ion-icon class="features-icon" name="leaf-outline"></ion-icon>
+              <div class="features-text-content">
+                <h3 class="features-heading">No waste</h3>
+                <p class="features-text">
+                  All our partners only use reusable containers to package all
+                  your meals.
                 </p>
               </div>
             </li>
