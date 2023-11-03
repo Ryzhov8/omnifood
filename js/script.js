@@ -23,7 +23,7 @@ refs.headerBtnEl.addEventListener("click", function () {
 refs.navLinks.forEach((link) => {
   link.addEventListener("click", function () {
     if (window.screen.width <= 752) {
-      refs.headerEl.classList.toggle("nav-open");
+      document.body.classList.toggle("nav-open");
     }
   });
 });
