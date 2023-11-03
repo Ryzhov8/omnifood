@@ -69,10 +69,10 @@ ul {
 html {
   font-size: 62.5%;
   overflow: auto;
+  scroll-behavior: smooth;
 }
 
 body {
-  scroll-behavior: smooth;
   font-size: 16px;
   font-family: "Rubik", sans-serif;
   line-height: 1;
