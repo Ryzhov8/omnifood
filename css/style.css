@@ -68,12 +68,10 @@ ul {
 
 html {
   font-size: 62.5%;
-  overflow-x: hidden;
+  overflow: auto;
 }
 
 body {
-  overflow-x: hidden;
-  position: relative;
   font-size: 16px;
   font-family: "Rubik", sans-serif;
   line-height: 1;
@@ -92,6 +90,7 @@ button {
 }
 
 .container {
+  overflow: hidden;
   max-width: 120rem;
   margin: 0 auto;
   padding: 0 3rem;
@@ -197,10 +196,7 @@ button {
 /* ************************** */
 
 .header {
-  z-index: 9999;
   height: 8rem;
-
-  box-shadow: 0px 5px 5px -1px rgba(0, 0, 0, 0.036);
   background-color: #fdf2e9;
 }
 
@@ -209,6 +205,21 @@ button {
   justify-content: space-between;
   align-items: center;
   height: 100%;
+}
+
+.sticky .header,
+.nav-open .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  box-shadow: 0px 5px 5px -1px rgba(0, 0, 0, 0.036);
+}
+
+.sticky .hero-section,
+.nav-open .hero-section {
+  margin-top: 8rem;
 }
 
 /* ************************** */
@@ -243,8 +254,7 @@ button {
   gap: 4.8rem;
 }
 
-.nav-link,
-.nav-link-cta {
+.nav-link {
   display: inline-block;
   font-size: 1.8rem;
   font-weight: 500;
@@ -261,6 +271,12 @@ button {
 .nav-link:active,
 .nav-link:focus {
   color: #e67e22;
+}
+
+.nav-link-cta:hover,
+.nav-link-cta:active,
+.nav-link-cta:focus {
+  color: #fff;
 }
 
 /* ************************** */

@@ -3,6 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="omnifood is the AI-powereds 365-days-per-year food subscription that will make you eat healthy again. Tailored to your personal tastes and nutritional needs."
+    />
+    <link
+      rel="shortcut icon"
+      href="./img/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="apple-touch-icon" href="./img/favicon/apple-touch-icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,7 +22,7 @@
 
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/queries.css" />
-    <title>Omnifood</title>
+    <title>Omnifood &mdash; never cook again!</title>
   </head>
   <body>
     <header class="header">
@@ -24,7 +34,11 @@
             alt="Omnifood logo"
           />
         </a>
-        <button type="button" class="button-mobile-nav">
+        <button
+          type="button"
+          class="button-mobile-nav"
+          aria-label="Button for open and close navigation menu"
+        >
           <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
           <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
         </button>
@@ -44,7 +58,9 @@
               <a href="#pricing" class="nav-link">Pricing</a>
             </li>
             <li class="nav-item">
-              <a href="#cta" class="nav-link-cta btn--full">Start now!</a>
+              <a href="#cta" class="nav-link nav-link-cta btn--full"
+                >Start now!</a
+              >
             </li>
           </ul>
         </nav>
@@ -63,8 +79,8 @@
               nutritional needs.
             </p>
             <div class="btn-container">
-              <a href="#" class="btn btn--full">Start eating well</a>
-              <a href="#" class="btn btn--outline">Learn more &darr;</a>
+              <a href="#cta" class="btn btn--full">Start eating well</a>
+              <a href="#app" class="btn btn--outline">Learn more &darr;</a>
             </div>
             <div class="customers">
               <ul class="customers-list">
@@ -683,7 +699,7 @@
                   />
                 </div>
                 <div class="">
-                  <label class="cta-form-label" for=""
+                  <label class="cta-form-label" for="select-where"
                     >Where did you hear about us?</label
                   >
                   <select class="cta-form-select" id="select-where">
@@ -716,23 +732,30 @@
           </a>
           <ul class="social-list">
             <li class="social-item">
-              <a href="#" class="social-link"
+              <a
+                href="#"
+                class="social-link"
+                aria-label="Omnifood Instagram page"
                 ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
               ></a>
             </li>
             <li class="social-item">
-              <a href="#" class="social-link"
+              <a
+                href="#"
+                class="social-link"
+                aria-label="Omnifood Facebook page"
                 ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
               ></a>
             </li>
             <li class="social-item">
-              <a href="#" class="social-link"
+              <a href="#" class="social-link" aria-label="Omnifood Twitter page"
                 ><ion-icon class="social-icon" name="logo-twitter"></ion-icon>
               </a>
             </li>
           </ul>
           <p class="copy">
-            Copyright &copy; 2023 by Omnifood Inc. All rights reserved.
+            Copyright &copy; <span class="current-year"></span> by Omnifood Inc.
+            All rights reserved.
           </p>
         </div>
         <div class="footer-address">
@@ -797,6 +820,7 @@
         </nav>
       </div>
     </footer>
+    <script type="module" src="./js/script.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
